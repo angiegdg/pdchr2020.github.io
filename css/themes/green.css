@@ -58,19 +58,19 @@ body,
  * ----- */
 
 ::-moz-selection {
-    background: #f7931D;  
+    background: #0000FF;  
     color: #FFF;
 }
 
 ::selection {
-    background #f7931D;
+    background #0000FF;
     color: #FFF;
 }
 
 .header,
 .sub-header {
     color: #FFF;
-    background-color: #f7931D;
+    background-color: #0000FF;
 }
 /*color*/
 
@@ -80,43 +80,43 @@ a:focus,
 .speaker-info p,
 .highlighted-plan .price,
 .highlighted-plan .plan-name {
-    color: #f7931D;
+    color: #0000FF;
 }
 
 .benefit-item .benefit-icon i {
-    color: #f7931D;
+    color: #0000FF;
 }
 /*background*/
 
 .timeline::before {
-    background: #f7931D;
+    background: #0000FF;
 }
 
 .navbar-default .navbar-nav>.active>a,
 .navbar-default .navbar-nav>.active>a:focus,
 .navbar-default .navbar-nav>.active>a:hover {
     color: #FFF;
-    background-color: #f7931D;
+    background-color: #0000FF;
 }
 /*border*/
 
 .timeline-bullet,
 .highlighted-plan {
-    border-color: #f7931D;
+    border-color: #0000FF;
 }
 /*background color*/
 
 .nav-pills>li.active>a,
 .nav-pills>li.active>a:focus,
 .nav-pills>li.active>a:hover {
-    background-color: #f7931D;
+    background-color: #0000FF;
 }
 /* 
   BUTTONS
   ------- */
 
 .btn-default {
-    color: #f7931D;
+    color: #0000FF;
     border-color: #FFF;
 }
 
@@ -141,8 +141,8 @@ a:focus,
 }
 
 .btn-success {
-    background-color: #f7931D;
-    border-color: #f7931D;
+    background-color: #0000FF;
+    border-color: #0000FF;
 }
 
 .btn-success:hover,
@@ -150,8 +150,8 @@ a:focus,
 .btn-success:active,
 .btn-success.active {
     background-color: #FFF;
-    border-color: #f7931D;
-    color: #f7931D;
+    border-color: #0000FF;
+    color: #0000FF;
 }
 
 .btn-outline {
