@@ -1,16 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- 
 
-Page    : index / Gather
-Version : 1.0
-Author  : Surjith S M
-URI     : http://themeforest.net/user/surjithctly
-
-Copyright © All rights Reserved
-Surjith S M / @surjithctly
-
- -->
 
 <head>
     <meta charset="utf-8">
@@ -82,7 +72,7 @@ Surjith S M / @surjithctly
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#"><img src="images/event-logo-dark.png" alt="Gather"> </a>
+                <a class="navbar-brand" href="#"><img src="images/event-logo-dark.png" alt="logopdchr"> </a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
 
@@ -101,7 +91,7 @@ Surjith S M / @surjithctly
     <!-- // End Fixed navbar -->
     
     <header id="top" class="header">
-        <noscript><a href="https://volunteer-leaders-symposium.eventbrite.com" rel="noopener noreferrer" target="_blank"></noscript>
+        <noscript><a href="https://pdchrleadership2020.eventbrite.com" rel="noopener noreferrer" target="_blank"></noscript>
         <div class="container">
 
             <div class="header_top-bg">
@@ -122,7 +112,7 @@ Surjith S M / @surjithctly
             <div class="header_bottom-bg">
                 
 
-                <button class="btn btn-default btn-xl wow zoomIn" data-wow-delay="0.3s" id="eventbrite-widget-modal-trigger" type="button">RESERVE MY SEAT</button>
+                <button class="btn btn-default btn-xl wow zoomIn" data-wow-delay="0.3s" id="eventbrite-widget-modal-trigger-75124795285" type="button">RESERVE MY SEAT</button>
                 
                 <noscript></a>Buy Tickets on Eventbrite</noscript>
                <!-- <p class="cta_urgency wow fadeIn" data-wow-delay="0.5s"><small>Hurry up, Only few seats are available</small></p> -->
@@ -816,14 +806,14 @@ Surjith S M / @surjithctly
      ====================================== -->
 
     <section class="footer-action">
-        <noscript><a href="https://volunteer-leaders-symposium.eventbrite.com" rel="noopener noreferrer" target="_blank"></noscript>
+        <noscript><a href="https://pdchrleadership2020.eventbrite.com" rel="noopener noreferrer" target="_blank"></noscript>
         <div class="container">
 
             <h4 class="headline-support wow fadeInDown">Connect. Coordinate. Collaborate</h4>
             <h2 class="headline wow fadeInDown" data-wow-delay="0.1s">JOIN THE SYMPOSIUM</h2>
 
             <div class="footer_bottom-bg">
-                <button class="btn btn-success btn-xl wow zoomIn" data-wow-delay="0.3s" id="eventbrite-widget-modal-trigger" type="button">RESERVE MY SEAT</button>
+                <button class="btn btn-success btn-xl wow zoomIn" data-wow-delay="0.3s" id="eventbrite-widget-modal-trigger-75124795285" type="button">RESERVE MY SEAT</button>
                 <noscript></a>Buy Tickets on Eventbrite</noscript>
             </div>
 
@@ -880,20 +870,21 @@ Surjith S M / @surjithctly
     <!-- Main Script -->
     <script src="js/main.js"></script>
     
-    <script src="https://pdchrleadership2020.eventbrite.com/static/widgets/eb_widgets.js"></script>
-        <script type="text/javascript">
-        var exampleCallback = function() {
-            console.log('Order complete!');
-        };
+  <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
 
-        window.EBWidgets.createWidget({
-            widgetType: 'checkout',
-            eventId: '56128563043',
-            modal: true,
-            modalTriggerElementId: 'eventbrite-widget-modal-trigger',
-            onOrderComplete: exampleCallback
-        });
-        </script>
+	<script type="text/javascript">
+    var exampleCallback = function() {
+        console.log('Order complete!');
+    };
+
+    window.EBWidgets.createWidget({
+        widgetType: 'checkout',
+        eventId: '75124795285',
+        modal: true,
+        modalTriggerElementId: 'eventbrite-widget-modal-trigger-75124795285',
+        onOrderComplete: exampleCallback
+    });
+</script>
 
 </body>
 
