@@ -2110,6 +2110,10 @@ footer {
 
 @media (max-width: 992px) {
     .border-prices{
-        border-right: none;
+       border-right: none;
+       border-bottom: 2px solid #0000FF;
+       margin-left: 10%;
+       margin-right:10%;
+       margin-bottom: 10%;
     }
 }
