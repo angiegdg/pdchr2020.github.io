@@ -633,7 +633,11 @@ p,
     padding: 5% 0;
 } */ 
 
-
+ .header.image-banner {
+   background: url('../images/banner.jpg') no-repeat center top;
+    background-size: cover;
+    background-attachment: fixed;
+} 
 
     .header-title h1{
         margin-top: 0px;
@@ -723,7 +727,7 @@ p,
 }
 /* 
  Header Parallax
- --------------- */
+ --------------- 
 
 .header.parallax-bg {
     background: url('../images/banner.jpg') no-repeat center top;
@@ -734,7 +738,7 @@ p,
 .parallax-bg .header_top-bg,
 .parallax-bg .header_bottom-bg {
     background: none;
-}
+}*/
 /* 
  Header Slider
  --------------- */
