@@ -134,7 +134,7 @@ p,
 }
 /* 
    Buttons
-   ------- */
+   ------- */ 
 
 .btn {
     border-radius: 3px;
@@ -636,7 +636,6 @@ p,
  .header.image-banner {
    background: url('../images/banner.jpg') no-repeat center top;
     background-size: cover;
-    background-attachment: fixed;
 } 
 
     .header-title h1{
