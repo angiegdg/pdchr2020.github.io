@@ -81,28 +81,25 @@ $(function() {
              AJAX POST
              --------- */
                              
+          
             $.ajax({
-                url: "https://xb831en76l.execute-api.us-east-1.amazonaws.com/beta/contact-us",
                 type: "POST",
-                dataType: "json",
-                contentType: "application/json; charset=utf-8",
-                crossDomain: "true",
-                data: JSON.stringify(data),                
-                success: function(e) {
+                data: dataString,
+                url: "php/contact.php",
+                cache: false,
+                success: function(d) {
                     $(".form-group").removeClass("has-success");
-                    
+                    if (d == 'success') {
                         if (noredirect) {
-                            $('#js-contact-result').fadeIn('slow').html('<div class="alert alert-success top-space">Sent Email</div>').delay(3000).fadeOut('slow');
+                            $('#js-contact-result').fadeIn('slow').html('<div class="alert alert-success top-space">' + success_msg + '</div>').delay(3000).fadeOut('slow');
                         } else {
                             window.location.href = redirect;
                         }
-                    
+                    } else {
+                        $('#js-contact-result').fadeIn('slow').html('<div class="alert alert-danger top-space">' + error_msg + '</div>').delay(3000).fadeOut('slow');
+                    }
                     $("#js-contact-btn").attr("disabled", false);
-                },
-                error: function (e) {
-		            $('#js-contact-result').fadeIn('slow').html('<div class="alert alert-danger top-space">At this time it is not possible to send your mail.</div>').delay(3000).fadeOut('slow');
-		        	$("#js-contact-btn").attr("disabled", false);
-		        }
+                }
             });
             return false;
 
