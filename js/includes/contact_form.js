@@ -64,24 +64,12 @@ $(function() {
             var success_msg = $('#js-contact-result').data('success-msg');
             var error_msg = $('#js-contact-result').data('error-msg');
 
-			var name_1 = $("#first_name").val();
-			var name_2 = $("#last_name").val();
-			var email = $("#email").val();
-			var phone = $("#phone").val();
-			var message = $("#message").val();
-			var data = {
-			  first_name : name_1,
-			  last_name : name_2,
-			  phone : phone,
-			  email : email,
-			  message : message
-			};
-            
+            var dataString = $(form).serialize();
+
             /* 
              AJAX POST
              --------- */
-                             
-          
+
             $.ajax({
                 type: "POST",
                 data: dataString,

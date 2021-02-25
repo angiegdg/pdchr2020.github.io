@@ -18,13 +18,13 @@ $email = $_REQUEST["email"];
 $phone = $_REQUEST["phone"];
 $msg   = $_REQUEST["message"];
 
-$to    = "info@pdc-hr.org"; // <--- Your email ID here
+$to    = "marbow32@gopdchr.org"; // <--- Your email ID here
 $subject_txt = $name." sent you a message via Event Website"; // <--- Contact for Subject here.
 
 
 if (isset($email) && isset($name)) {
     $subject  = $subject_txt;
-	$website = "http://" . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI']; 
+	$website = "https://" . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI']; 
 		$headers = "MIME-Version: 1.0" . "\r\n";
 $headers .= "Content-type:text/html;charset=iso-8859-1" . "\r\n";
 $headers .= "From: ".$name." <".$email.">\r\n"."Reply-To: ".$email."\r\n" ;
