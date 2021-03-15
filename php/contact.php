@@ -18,7 +18,7 @@ $email = $_REQUEST["email"];
 $phone = $_REQUEST["phone"];
 $msg   = $_REQUEST["message"];
 
-$to    = "events@pdc-hr.org"; // <--- Your email ID here
+$to    = "markbow32@gopdchr.org"; // <--- Your email ID here
 $subject_txt = $name." sent you a message via Event Website"; // <--- Contact for Subject here.
 
 
